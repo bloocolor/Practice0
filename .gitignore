@@ -1,24 +1,307 @@
-# Compiled class file
-*.class
+import java.util.Scanner;
 
-# Log file
-*.log
+public class Practism {
+    public static void main(String[] args){
 
-# BlueJ files
-*.ctxt
+        /*
+             public class Dacaybayot {
+                public static void main(String[] args) {
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+            }
+        }
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+        */
+        Scanner formula = new Scanner(System.in);
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+        System.out.println("Group 1 System: Student Average Grade \n");
+
+        /*
+            Problem:
+
+                Create a program
+                    that calculates
+                        the average of
+                               three grades.
+         */
+
+        System.out.print("Provide the score for grade 1: ");
+        int grade1 = formula.nextInt();
+
+        System.out.print("Provide the score for grade 2: ");
+        int grade2 = formula.nextInt();
+
+        System.out.print("Provide the score for grade 3: ");
+        int grade3 = formula.nextInt();
+
+        double totalScores = grade1 + grade2 + grade3;
+        String name0 = "Khent";
+        String name1 = "Remas";
+
+        System.out.println("\n======= THE RESULT =======\n");
+        System.out.println("Grade 1 score " + grade1);
+        System.out.println("Grade 2 score " + grade2);
+        System.out.println("Grade 3 score " + grade3 + "\n");
+        System.out.print("Evaluating the total scores... \n");
+        System.out.println("\nit's: " + totalScores + "!\n");
+        System.out.println("The total average after dividing the is: " + totalScores / 3 + "\n" );
+        System.out.print("Good jod Sir " + name0 + "! Proceed to the System 2\n");
+
+        System.out.println("\nGroup 2 System: Shopping Total\n");
+
+        /*
+            Problem:
+
+               Create a program
+                    that calculates
+                           the total price
+                                of three products.
+        */
+
+        System.out.print("Enter the price of first product: ");
+        int product1 = formula.nextInt();
+
+        System.out.print("Enter the price of second product: ");
+        int product2 = formula.nextInt();
+
+        System.out.print("Enter the price of third product: ");
+        int product3 = formula.nextInt();
+
+        int totalPrice = product1 + product2 + product3;
+
+        System.out.println("\n======= THE RESULT =======\n");
+        System.out.println("The first product is " + product1);
+        System.out.println("The second product is " + product2);
+        System.out.println("The third product is " + product3 + "\n");
+        System.out.println("Calculating the total price... " + "\n");
+        System.out.println("The total price of products is " + totalPrice + "\n");
+        System.out.print("Well done Sir " + name0 + "! You're doing great. Proceed to the next System\n");
+
+        System.out.println("\nGroup 3 System: Salary Calculator\n");
+
+        /*
+
+            Problem:
+
+               Create a program
+                    that calculates
+                        an employee's salary
+                            based on hours worked
+                                    and hourly rate.
+        */
+
+        System.out.print("Employee's hourly worked: ");
+        int employeesTime = formula.nextInt();
+
+        System.out.print("Employee's hourly rate: ");
+        int employeesRate = formula.nextInt();
+
+        int salary = employeesTime * employeesRate;
+
+        System.out.println("\n======= THE RESULT =======\n");
+        System.out.println("Their usual work hour is: " + employeesTime);
+        System.out.println("Their usual work rate is: " + employeesRate + "\n");
+        System.out.println("System is calculating to their plausible salary..." + "\n");
+        System.out.println("There salary is " + salary + "\n");
+        System.out.println("Well done Sir " + name0 + "! That's lowk tuff. Proceed to the next System\n");
+
+        System.out.println("\nGroup 4 System: Rectangle Calculator\n");
+
+        /*
+            Problem:
+
+                Create a program
+                      that calculates
+                           the area and perimeter
+                                      of a rectangle.
+        */
+
+        System.out.print("Type the length: ");
+        int length = formula.nextInt();
+
+        System.out.print("Type the width: ");
+        int width = formula.nextInt();
+
+        double area = length * width;
+        double perimeter = 2 * (length + width);
+
+        System.out.println("\n======= THE RESULT =======\n");
+        System.out.println("The length of the subject is: " + length);
+        System.out.println("The width of the subject is: " + width + "\n");
+        System.out.println("System is calculating... " + "\n");
+        System.out.println("The size of the area after the System calculate is " + area + "\n");
+        System.out.println("The size of the perimeter after the System calculate is " + perimeter + "\n");
+        System.out.println("Well done Sir " + name0 +"! What a great job, well done. Now, proceed to the next System \n");
+
+        System.out.println("\nGroup 5 System: BMI Calculator\n");
+
+        /*
+
+            Problem:
+
+                Create a program
+                    that calculates
+                        BMI (Body Mass Index)
+                            based on weight and height.
+        */
+
+
+        System.out.print("Type your weight through kilograms: ");
+        int weight = formula.nextInt();
+
+        System.out.print("Type your height through meters: ");
+        double height = formula.nextDouble();
+
+        double BMI = weight / (height * height);
+
+        System.out.println("\n======= THE RESULTS =======\n");
+        System.out.println("Your weight that you provide is: " + weight);
+        System.out.println("Your height that you provide is: " + height + "\n");
+        System.out.println("Your BMI is: " + BMI);
+        System.out.println("Well done Sir" + name0 + "! You did a great job. Now proceed to the next System\n");
+
+        System.out.println("\nGroup 6 System: Electricity Bill Calculator\n");
+
+        /*
+
+            Problem:
+
+                Create a program
+                    that calculates
+                        an electricity bill
+                            based on kWh consumed
+                                and cost per kWh.
+
+        */
+
+        System.out.print("Input the electricity that consumed with kWh: ");
+        int consumedInkWh = formula.nextInt();
+
+        System.out.print("Input the cost per kWh: ");
+        double costPerkWh = formula.nextDouble();
+
+        double electricBill = consumedInkWh * costPerkWh;
+
+        System.out.println("\n======= THE RESULTS =======\n");
+        System.out.println("The kWh consumed is " + consumedInkWh);
+        System.out.println("The cost by kWh is " + costPerkWh);
+        System.out.println("Your electric bill will be " + electricBill + "\n");
+        System.out.println("And that's how you answer that shii Sir " + name0 + ". Now, proceed to the next System\n");
+
+        System.out.println("\nGroup 7 System: Travel Expense Calculator\n");
+
+        /*
+            Problem:
+
+                Create a program
+                    that calculates
+                        the total bill
+                            and the amount
+                               each person should pay.
+        */
+
+        System.out.print("Input the Number of Travels: ");
+        int numberOfTravels = formula.nextInt();
+
+        System.out.print("Input the Transportation cost per travel: ");
+        int costPerTravel = formula.nextInt();
+
+        double totalCost = numberOfTravels * costPerTravel;
+
+        System.out.println("\n======= THE RESULTS =======\n");
+        System.out.println("The number you travel was: " + numberOfTravels);
+        System.out.println("The number of travel cost was: " + costPerTravel + "\n");
+        System.out.println("The total is: " + totalCost + "\n");
+        System.out.println("Thank you for answering Ms " + name1 + "! That's a good job well done there. Now proceed to the next System\n");
+
+        System.out.println("\nGroup 8 System: RESTAURANT BILL CALCULATOR\n");
+
+        /*
+            Problem:
+
+                 Create a program
+                    that calculates
+                        the total bill
+                            and the amount
+                                each person should pay.
+        */
+
+        System.out.print("Input the Total Restaurant bill: ");
+        int totalRestaurant = formula.nextInt();
+
+        System.out.print("Input the Number of People: ");
+        int numberPeople = formula.nextInt();
+
+        double eachPeoplePays = totalRestaurant / numberPeople;
+
+        System.out.println("\n======= THE RESULTS =======\n");
+        System.out.println("The total bill of the people eat is: " + totalRestaurant);
+        System.out.println("The total people who shares the food are: " + numberPeople);
+        System.out.println("The total bill is: " + eachPeoplePays);
+        System.out.println("Thank you for answering " + name1 + "! That's a good job well done. Now prodceed to the next System\n");
+
+        System.out.println("\nGroup 9 System: MOBILE DATA COST CALCULATOR\n");
+
+        /*
+            Problem:
+
+                Create a program
+                    that calculates
+                        the total cost
+                            of mobile data usage.
+        */
+
+        System.out.print("Input the amount of Data Used in GB: ");
+        int dataUsed = formula.nextInt();
+
+        System.out.print("Input the Cost Per GB: ");
+        int costPerGB = formula.nextInt();
+
+        int totalCostPerGB = dataUsed * costPerGB;
+
+        System.out.println("\n======= THE RESULTS =======\n");
+        System.out.println("The amount of data you used is: " + dataUsed);
+        System.out.println("The the cost of GB in every used is: " + costPerGB);
+        System.out.println("The System is calculating on the answer, please wait... \n");
+        System.out.println("The total is: " +totalCostPerGB);
+        System.out.println("Thank you for answering Ms " + name1 + "! That's a job well done there. Please proceed to the next System. \n");
+
+        System.out.println("\nGroup 10 System: STUDENT FINAL SCORE CALCULATOR\n");
+
+        /*
+            Problem:
+
+                Create a program
+                    that calculates a student's
+                            final score based on
+                                quiz, activity, and examination scores.
+        */
+
+        System.out.print("Input your Quiz Score Ms " + name1 + ": ");
+        int quizScore = formula.nextInt();
+
+        System.out.print("Input your Activity Score Ms " + name1 + ": ");
+        int activityScore = formula.nextInt();
+
+        System.out.print("Input your Examination Score Ms " + name1 + ": ");
+        int examinationScore = formula.nextInt();
+
+        double quiz1 = quizScore * 0.30;
+        double quiz2 = activityScore * 0.30;
+        double quiz3 = examinationScore * 0.40;
+
+        double totalGrade = quiz1 + quiz2 + quiz3;
+
+        System.out.println("\n======= THE RESULTS =======\n");
+        System.out.println("Ms " + name1 + ", your quiz score is: " + quizScore);
+        System.out.println("And Ms " + name1 + ", your activity score is " + activityScore);
+        System.out.println("And your examination score is " + examinationScore);
+        System.out.println("The system is calculating your final answer, please wait patiently... " + "\n");
+        System.out.println("Your final score is " + totalGrade);
+        System.out.println("Thank you for answering Ms " + name1 + "\n");
+
+        System.out.println("Thank you for finishing the whole activity!" +
+                "");
+
+        formula.close();
+    }
+}
